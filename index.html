@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+	<head>
+		<title>Dribble Popular Shots</title>
+		<meta name="theme-color" content="#26a69a">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="node_modules/materialize-css/dist/css/materialize.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="app/assets/css/style.css">
+	</head>
+	<body>
+		
+  		<div ng-show="loading" class="progress">
+      		<div class="indeterminate"></div>
+  		</div>
+		<main ng-hide="loading" data-ui-view></main>
+		<!-- Dependências  da aplicação-->
+		<script src="node_modules/angular/angular.js" ></script>
+		<script src="node_modules/angular-sanitize/angular-sanitize.js" ></script>
+		<script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+		<!-- Módulo da Aplicação -->
+		<script src="app/app.module.js"></script>
+		<!-- Rotas da Aplicação -->
+		<script src="app/app.routes.js"></script>
+		<!-- Controllers -->
+		<script src="app/controllers/listagem.controller.js"></script>
+		<script src="app/controllers/detalhes.controller.js"></script>
+		<!-- Services -->
+		<script src="app/services/shots.service.js"></script>
+		<!-- Interceptors -->
+		<script src="app/interceptors/auth.interceptor.js"></script>
+		<script src="app/interceptors/error.interceptor.js"></script>
+		<script src="app/interceptors/loading.interceptor.js"></script>
+		<!-- Utils -->
+		<script src="app/utils/constants.js"></script>
+	</body>
+</html>
