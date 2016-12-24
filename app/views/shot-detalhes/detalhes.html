@@ -18,19 +18,25 @@
 	</div>
 </header>
 <section>
-	<div class="card" data-ng-show="DtCtrl.shot">
-		<div class="card-image waves-effect waves-block waves-light">
-			<img class="activator" data-ng-src="{{DtCtrl.shot.images.hidpi ? DtCtrl.shot.images.hidpi : DtCtrl.shot.images.normal}}">
-			<span class="card-title activator" data-ng-bind="DtCtrl.shot.title"></span>
+<div class="row">
+	<div class="col s12 m3"></div>
+	<div class="col s12 m6">
+		<div class="card" data-ng-show="DtCtrl.shot">
+			<div class="card-image waves-effect waves-block waves-light">
+				<img class="activator" data-ng-src="{{DtCtrl.shot.images.hidpi ? DtCtrl.shot.images.hidpi : DtCtrl.shot.images.normal}}">
+				<span class="card-title activator" data-ng-bind="DtCtrl.shot.title"></span>
+			</div>
+			<div class="card-content">
+				<ul class="collection">
+					<li class="collection-item avatar">
+						<img class="circle" data-ng-src="{{DtCtrl.shot.user.avatar_url}}">
+						<span class="title" data-ng-bind="DtCtrl.shot.user.name"></span>
+					</li>
+				</ul>
+				<p data-ng-bind-html="DtCtrl.shot.description"></p>
+			</div>
 		</div>
-		<div class="card-content">
-			<ul class="collection">
-				<li class="collection-item avatar">
-					<img class="circle" data-ng-src="{{DtCtrl.shot.user.avatar_url}}">
-					<span class="title" data-ng-bind="DtCtrl.shot.user.name"></span>
-				</li>
-			</ul>
-			<p data-ng-bind-html="DtCtrl.shot.description"></p>
-		</div>
+	</div>
+	<div class="col s12 m3"></div>
 	</div>
 </section>
