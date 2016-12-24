@@ -1,3 +1,5 @@
+(function(){
+    'use strict';
 let gulp = require('gulp');
 let clean = require('gulp-clean');
 let uglify = require('gulp-uglify');
@@ -61,8 +63,6 @@ gulp.task('copy', ['clean'], function() {
         .pipe(gulp.dest('dist/'));
 });
 
-/*gulp.task('copy-fonts', ['clean'], function() {
-    return gulp.src('node_modules/materialize-css/dist/fonts/roboto/*')
-        .pipe(gulp.dest('dist/app/fonts/roboto'));
-});*/
 gulp.task('default', ['jshint', 'uglify', 'htmlmin', 'cssmin', 'copy']);
+
+})();
