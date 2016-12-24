@@ -2,14 +2,14 @@
     'use strict';
     angular.module('app').factory('ErrorInterceptor', ErrorInterceptor);
 
-    ErrorInterceptor.$inject = ['$q', '$injector'];
+    ErrorInterceptor.$inject = ['$q', '$injector','$window'];
 
-    function ErrorInterceptor($q, $injector) {
+    function ErrorInterceptor($q, $injector, $window) {
         return {
 		responseError: function (rejection) {
 			
 			if (rejection) {
-				$injector.get('$state').transitionTo('erro');
+				$window.location.href = '#!/erro';
 			}
 			return $q.reject(rejection);
 		}

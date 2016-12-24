@@ -24,3 +24,9 @@ h4.error-msg{
 	width: 100%;
 }
 
+.progress {
+	margin:0px;
+	position: fixed;
+    z-index: 999;
+}
+

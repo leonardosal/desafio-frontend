@@ -4,9 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "update-deps": "npm update",
-    "prestart": "npm install",
-    "start": "http-server -a localhost -p 8080 -o -c-1",
     "test": "karma start",
     "test-single-run": "karma start karma.conf.js --single-run"
   },

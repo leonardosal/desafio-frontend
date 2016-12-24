@@ -10,7 +10,9 @@ module.exports = function(config) {
       'node_modules/angular-sanitize/angular-sanitize.min.js',
       'node_modules/angular-ui-router/release/angular-ui-router.js',
       'app/app.module.js',
+      'app/app.app.routes.js',
       'app/controllers/**/*.js',
+      'app/interceptors/**/*.js',
       'app/services/**/*.js',
       'app/utils/**/*.js'    
     ],
