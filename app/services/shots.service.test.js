@@ -18,7 +18,7 @@
             it('deve retornar a lista de shots corretamente', inject(function(ShotsService) {
                 ShotsService.list().then(function(result) {
                     expect(result.data).toEqual(shots);
-                })
+                });
                 httpBackend.flush();
             }));
         });
@@ -33,7 +33,7 @@
             it('deve retornar as informações do shot corretamente', inject(function(ShotsService) {
                 ShotsService.listById(ID).then(function(result) {
                     expect(result.data).toEqual(shot);
-                })
+                });
                 httpBackend.flush();
             }));
         });

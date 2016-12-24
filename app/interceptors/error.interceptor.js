@@ -8,9 +8,8 @@
         return {
 		responseError: function (rejection) {
 			
-			if (rejection) {
-				$window.location.href = '#!/erro';
-			}
+			$window.location.href = '#!/erro';
+			
 			return $q.reject(rejection);
 		}
 	};
