@@ -57,12 +57,17 @@ gulp.task('cssmin', ['clean'], function() {
         .pipe(gulp.dest('dist/app/css'));
 });
 
-gulp.task('copy', ['clean'], function() {
-    return gulp.src('index.prod.html')
+gulp.task('copy-index', ['clean'], function() {
+    return gulp.src(['index.prod.html'])
         .pipe(rename('index.html'))
         .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('default', ['jshint', 'uglify', 'htmlmin', 'cssmin', 'copy']);
+gulp.task('copy-error', ['clean'], function() {
+    return gulp.src(['error.html'])
+        .pipe(gulp.dest('dist/'));
+});
+
+gulp.task('default', ['jshint', 'uglify', 'htmlmin', 'cssmin', 'copy-index', 'copy-error']);
 
 })();
