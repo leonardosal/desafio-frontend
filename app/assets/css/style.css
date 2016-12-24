@@ -16,10 +16,6 @@ footer.page-footer .footer-copyright{
 	padding-right: 10px;
 }
 
-.card-image img:before {
-	background-image: url(../images/default.png);
-}
-
 h4.error-msg{
 	width: 100%;
 }
