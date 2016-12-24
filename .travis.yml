@@ -16,9 +16,9 @@ install:
 deploy:
   provider: heroku
   api_key:
-    secure: "fa924b90-5969-4f79-9b2b-0afb6f8a75a8"
-    app: "desafio-front-leo"
-    
+    secure: "193dce2a-5a5c-4f0b-9cbf-c03df2129b5c"
+  app: "desafio-front-leo"
+
 before_script:
   - npm install
 
