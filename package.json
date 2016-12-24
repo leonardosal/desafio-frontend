@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prestart" : "npm install && gulp",
+    "prestart" : "npm install",
     "start": "node server.js",
     "test": "karma start",
     "test-single-run": "karma start karma.conf.js --single-run"
