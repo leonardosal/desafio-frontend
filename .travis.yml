@@ -13,6 +13,12 @@ install:
   - sudo apt-get update -q
   - sudo apt-get install -q google-chrome-stable
 
+deploy:
+  provider: heroku
+  api_key:
+    secure: "fa924b90-5969-4f79-9b2b-0afb6f8a75a8"
+    app: "desafio-front-leo"
+    
 before_script:
   - npm install
 
