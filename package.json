@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "test": "karma start",
     "test-single-run": "karma start karma.conf.js --single-run"
   },
@@ -22,7 +23,8 @@
     "angular-mocks": "^1.6.1",
     "angular-sanitize": "^1.6.1",
     "angular-ui-router": "^0.3.2",
-    "jquery": "^3.1.1",
+    "express": "^4.14.0",
+    "gzippo": "^0.2.0",
     "materialize-css": "^0.97.8"
   },
   "devDependencies": {
