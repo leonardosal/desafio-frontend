@@ -28,9 +28,9 @@ Implementar uma aplicação completamente client-side, que consulte a API do Dri
 
 ### **Definição de Pronto** ###
 
-* O layout deve ser responsivo para dispositivos com a resolução no mÃ­nimo de 320 x 480;
+* O layout deve ser responsivo para dispositivos com a resolução no mínimo de 320 x 480;
 * Deve ser utilizando um framework para RIA (Rich Internet Application), como  [AngularJS](https://angularjs.org/), [Ember.js](http://emberjs.com/), [Backbone.js](http://backbonejs.org/) ou qualquer outro.
-* A pÃ¡gina de detalhes de um shot deve mostrar o autor com foto.
+* A página de detalhes de um shot deve mostrar o autor com foto.
 
 ### **Critérios de Avaliação** ###
 
