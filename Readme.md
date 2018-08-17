@@ -20,8 +20,6 @@ Implementar uma aplicação completamente client-side, que consulte a API do Dri
 
 **API**: [http://developer.dribbble.com/v1/ ](http://developer.dribbble.com/v1/)
 
-![Screen Shot 2014-10-09 at 3.42.06 PM.png](https://bitbucket.org/repo/bApLBb/images/3039998141-Screen%20Shot%202014-10-09%20at%203.42.06%20PM.png)
-
 ### **Requisitos** ###
 
 * Eu, como usuário, quero ver a lista de shots;
