@@ -2,6 +2,6 @@
 	'use strict';
 	angular.module('app').constant('Constants', {
 		BASE_URL: 'https://api.dribbble.com/v1/shots',
-		TOKEN: 'c360160eb1b54b46cf819a05bc36daa27c354ba6c1e7157006c35297e4954954'
+		TOKEN: '70c460714637316bdc0914b78207deb651175432535853daf487f594660c7048'
 	});
 })();
