@@ -14,11 +14,11 @@
         return shots;
 
         function list() {
-            return $http.get(Constants.BASE_URL + '?list=popular');
+            return $http.get(Constants.BASE_URL + '/popular_shots');
         }
 
         function listById(id) {
-            return $http.get(Constants.BASE_URL + '/' + id);
+            return $http.get(Constants.BASE_URL + '/shots' + id);
         }
     }
 })();
